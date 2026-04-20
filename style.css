@@ -187,6 +187,95 @@ nav {
   animation: bounce 2s infinite;
 }
 
+/* 위치 섹션 스타일 */
+.location-section {
+  background-color: var(--white);
+  padding: 80px 0;
+}
+
+.location-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr; /* 왼쪽 정보, 오른쪽 지도 */
+  gap: 40px;
+  align-items: center;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.info-icon {
+  background: var(--abc-light-green);
+  color: var(--abc-green);
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.info-item h3 {
+  color: var(--abc-navy);
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.info-item p {
+  color: #666;
+  line-height: 1.4;
+}
+
+/* 지도 컨테이너 - 둥글게 */
+.map-container {
+  border-radius: 40px;
+  overflow: hidden;
+  border: 5px solid var(--abc-light-green);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* 인스타그램 버튼 */
+.btn-instagram {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(
+    45deg,
+    #f09433,
+    #e6683c,
+    #dc2743,
+    #cc2366,
+    #bc1888
+  );
+  color: white;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 50px;
+  font-weight: 700;
+  margin-top: 10px;
+  transition: transform 0.3s;
+}
+
+.btn-instagram:hover {
+  transform: translateY(-5px);
+}
+
+/* 모바일 대응 */
+@media (max-width: 768px) {
+  .location-grid {
+    grid-template-columns: 1fr; /* 세로로 배치 */
+  }
+
+  .map-container {
+    height: 300px;
+  }
+}
+
 @keyframes bounce {
   0%,
   100% {
