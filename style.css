@@ -1,0 +1,198 @@
+:root {
+  --abc-green: #98cb3b; /* 로고의 연두색 */
+  --abc-navy: #003366; /* 로고의 네이비 */
+  --abc-light-green: #eef7dc;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif; /* 둥글둥글한 폰트 */
+}
+
+body {
+  background-color: var(--white);
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* 네비게이션 - 둥근 느낌 */
+nav {
+  background: var(--white);
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-circle {
+  background: var(--abc-green);
+  color: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 1.2rem;
+  border: 3px solid var(--abc-navy);
+}
+
+.logo-text {
+  font-weight: 900;
+  font-size: 1.4rem;
+  color: var(--abc-navy);
+}
+
+.logo-text span {
+  color: var(--abc-green);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--abc-navy);
+  font-weight: 700;
+}
+
+/* 히어로 섹션 - 부드러운 곡선 배경 */
+.hero {
+  background: var(--abc-light-green);
+  padding: 80px 0;
+  border-radius: 0 0 80px 80px; /* 하단 둥글게 */
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: var(--abc-navy);
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: var(--abc-green);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+/* 버튼 - 아주 둥글게 */
+.btn-primary {
+  background: var(--abc-green);
+  color: white;
+  padding: 15px 40px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 900;
+  font-size: 1.1rem;
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 8px 0 #7fa832; /* 입체감 */
+}
+
+.btn-primary:hover {
+  transform: scale(1.1);
+}
+
+/* 코스 카드 - 귀여운 색상들 */
+.section-title {
+  text-align: center;
+  margin: 60px 0 40px;
+  color: var(--abc-navy);
+  font-size: 2.2rem;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+.course-card {
+  padding: 40px;
+  border-radius: 40px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.course-card.yellow {
+  background: #fff9e6;
+  border: 3px solid #ffcc00;
+}
+.course-card.green {
+  background: #f2f9e8;
+  border: 3px solid var(--abc-green);
+}
+.course-card.navy {
+  background: #e6ecf2;
+  border: 3px solid var(--abc-navy);
+}
+
+.icon-box {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.course-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: var(--abc-navy);
+}
+
+/* 와츠앱 버튼 - 통통 튀게 */
+.whatsapp-float {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #25d366;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-weight: 900;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

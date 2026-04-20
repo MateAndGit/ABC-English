@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The ABC English Institute - Hernandarias</title>
+    <!-- 귀여운 느낌의 폰트 Nunito -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 헤더 -->
+    <nav>
+      <div class="container nav-container">
+        <div class="logo-area">
+          <div class="logo-circle">abc</div>
+          <span class="logo-text">The ABC <span>English</span></span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#courses">Cursos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- 메인 히어로 -->
+    <header id="home" class="hero">
+      <div class="container hero-flex">
+        <div class="hero-text">
+          <h1>¡Aprendé inglés <br />de forma <span>divertida!</span></h1>
+          <p>
+            En Hernandarias, abrimos las puertas al mundo para vos y tus hijos.
+            🌟
+          </p>
+          <div class="hero-btns">
+            <a href="https://wa.me/5491112345678" class="btn-primary"
+              >¡Inscribite ahora!</a
+            >
+          </div>
+        </div>
+        <div class="hero-image">
+          <!-- 귀여운 일러스트나 학생 사진이 들어갈 자리 -->
+          <div class="blob"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- 코스 (귀여운 카드 형태) -->
+    <section id="courses" class="container">
+      <h2 class="section-title">Nuestros Cursos 🎈</h2>
+      <div class="course-grid">
+        <div class="course-card yellow">
+          <div class="icon-box">🐥</div>
+          <h3>Kids</h3>
+          <p>Juegos, canciones y mucha diversión para los más peques.</p>
+        </div>
+        <div class="course-card green">
+          <div class="icon-box">🎒</div>
+          <h3>Teens</h3>
+          <p>Reforzá el cole y empezá a hablar con confianza.</p>
+        </div>
+        <div class="course-card navy">
+          <div class="icon-box">💼</div>
+          <h3>Adultos</h3>
+          <p>Inglés práctico para viajes y mejores trabajos.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 와츠앱 플로팅 (통통 튀는 애니메이션) -->
+    <a
+      href="https://wa.me/5491112345678"
+      class="whatsapp-float"
+      target="_blank"
+    >
+      <i class="fab fa-whatsapp"></i>
+      <span>¿Dudas? Escribinos</span>
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
