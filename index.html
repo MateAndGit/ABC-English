@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The ABC English Institute - Hernandarias</title>
-    <!-- 귀여운 느낌의 폰트 Nunito -->
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap"
       rel="stylesheet"
@@ -16,7 +15,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- 헤더 -->
+    <!-- 네비게이션 -->
     <nav>
       <div class="container nav-container">
         <div class="logo-area">
@@ -26,34 +25,29 @@
         <ul class="nav-links">
           <li><a href="#home">Inicio</a></li>
           <li><a href="#courses">Cursos</a></li>
-          <li><a href="#contact">Contacto</a></li>
+          <li><a href="#location">Ubicación</a></li>
         </ul>
       </div>
     </nav>
 
     <!-- 메인 히어로 -->
     <header id="home" class="hero">
-      <div class="container hero-flex">
-        <div class="hero-text">
-          <h1>¡Aprendé inglés <br />de forma <span>divertida!</span></h1>
-          <p>
-            En Hernandarias, abrimos las puertas al mundo para vos y tus hijos.
-            🌟
-          </p>
-          <div class="hero-btns">
-            <a href="https://wa.me/5491112345678" class="btn-primary"
-              >¡Inscribite ahora!</a
-            >
-          </div>
-        </div>
-        <div class="hero-image">
-          <!-- 귀여운 일러스트나 학생 사진이 들어갈 자리 -->
-          <div class="blob"></div>
+      <div class="container">
+        <h1>¡Aprendé inglés <br />de forma <span>divertida!</span></h1>
+        <p>En Hernandarias, abrimos las puertas al mundo para vos. 🌟</p>
+        <div class="hero-btns">
+          <!-- 번호 적용 완료 -->
+          <a
+            href="https://wa.me/5493434591754"
+            class="btn-primary"
+            target="_blank"
+            >¡Inscribite por WhatsApp!</a
+          >
         </div>
       </div>
     </header>
 
-    <!-- 코스 (귀여운 카드 형태) -->
+    <!-- 코스 섹션 -->
     <section id="courses" class="container">
       <h2 class="section-title">Nuestros Cursos 🎈</h2>
       <div class="course-grid">
@@ -65,7 +59,7 @@
         <div class="course-card green">
           <div class="icon-box">🎒</div>
           <h3>Teens</h3>
-          <p>Reforzá el cole y empezá a hablar con confianza.</p>
+          <p>Reforzá el cole과 실력을 동시에 쌓는 청소년 반.</p>
         </div>
         <div class="course-card navy">
           <div class="icon-box">💼</div>
@@ -80,41 +74,42 @@
       <div class="container">
         <h2 class="section-title">¿Dónde estamos? 📍</h2>
         <div class="location-grid">
-          <!-- 지도 정보 -->
           <div class="location-info">
             <div class="info-item">
               <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
               <div>
                 <h3>Dirección</h3>
-                <p>Calle Falsa 123, Hernandarias<br />Entre Ríos, Argentina</p>
-              </div>
-            </div>
-            <div class="info-item">
-              <div class="info-icon"><i class="fas fa-clock"></i></div>
-              <div>
-                <h3>Horarios</h3>
-                <p>
-                  Lunes a Viernes: 14:00 - 20:00<br />Sábados: 09:00 - 13:00
-                </p>
+                <p>Hernandarias, Entre Ríos, Argentina</p>
               </div>
             </div>
             <div class="info-item">
               <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
               <div>
                 <h3>Teléfono / WhatsApp</h3>
-                <p>+54 9 11 1234-5678</p>
+                <!-- 번호 텍스트 적용 -->
+                <p>+54 9 343 459-1754</p>
               </div>
             </div>
-            <!-- 인스타그램 바로가기 버튼 -->
-            <a href="#" class="btn-instagram"
-              ><i class="fab fa-instagram"></i> ¡Seguinos en Instagram!</a
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-clock"></i></div>
+              <div>
+                <h3>Horarios</h3>
+                <p>Consultanos por horarios disponibles</p>
+              </div>
+            </div>
+            <a
+              href="https://www.facebook.com/the.abc.english.institute"
+              class="btn-facebook"
+              target="_blank"
             >
+              <i class="fab fa-facebook"></i> ¡Seguinos en Facebook!
+            </a>
           </div>
 
-          <!-- 구글 지도 (아이프레임) -->
           <div class="map-container">
+            <!-- 구글 지도 (Hernandarias 지역 좌표 반영 샘플) -->
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3393.5!2d-59.9!3d-31.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDEyJzAwLjAiUyA1OcKwNTQnMDAuMCJX!5e0!3m2!1ses-419!2sar!4v1620000000000!5m2!1ses-419!2sar"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13589.6!2d-59.99!3d-31.23!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b230!2sHernandarias%2C%20Entre%20R%C3%ADos!5e0!3m2!1ses-419!2sar!4v1700000000000!5m2!1ses-419!2sar"
               width="100%"
               height="350"
               style="border: 0"
@@ -127,16 +122,14 @@
       </div>
     </section>
 
-    <!-- 와츠앱 플로팅 (통통 튀는 애니메이션) -->
+    <!-- 와츠앱 플로팅 버튼 -->
     <a
-      href="https://wa.me/5491112345678"
+      href="https://wa.me/5493434591754"
       class="whatsapp-float"
       target="_blank"
     >
       <i class="fab fa-whatsapp"></i>
-      <span>¿Dudas? Escribinos</span>
+      <span>¡Hablanos!</span>
     </a>
-
-    <script src="script.js"></script>
   </body>
 </html>
